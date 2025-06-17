@@ -90,7 +90,7 @@ def fetch_users(max_users: int, headers: dict) -> list:
     """
 
     all_users = []
-    since = 0
+    since = 10367555    #ID permettant de récupérer uniquement les comptes à partir de 2015 (à partir de 0 -> 2008)
 
     while len(all_users) < max_users:
         url = f"https://api.github.com/users?since={since}"
