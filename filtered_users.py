@@ -22,7 +22,7 @@ def load_users(filepath):
 
 def remove_duplicates(users):
     """
-    Fonction peremettant de supprimer tous les doublons dans les utilisateurs
+    Fonction permettant de supprimer tous les doublons dans les utilisateurs
     en vérifiant l'ID
 
     Args:
