@@ -197,6 +197,27 @@ GET /users/search?q=brony
 
 ---
 
+## Tests automatisés avec `test_api.py`
+
+Le fichier `test_api.py` contient des tests automatisés pour valider le bon fonctionnement de l’API FastAPI.
+
+### Exécution des tests
+
+Pour lancer tous les tests avec un affichage détaillé, utilisez la commande suivante :
+
+```sh
+pytest -v
+```
+
+- `-v` (verbose) permet d’obtenir un affichage détaillé des résultats de chaque test.
+- Les tests vérifient notamment la disponibilité des endpoints, la validité des réponses JSON, la gestion des erreurs et la sécurité de l’API.
+
+Assurez-vous que l’API FastAPI est en cours d’exécution avant de lancer les tests.  
+  
+![Pytest](img/screens/08-pytest.PNG)
+
+---
+
 ## Remarques
 
 - Les identifiants d’accès à l’API sont à configurer dans un fichier `.env` (voir .env.example).
